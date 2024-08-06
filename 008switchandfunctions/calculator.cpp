@@ -6,12 +6,13 @@ int main(){
     cout<<"enter first  num:";
     cin>>a;
     cout<<"enter second num:";
+    cin>>b;
 
     char op ;
-    cout<<"enter opration:"
+    cout<<"enter opration:"<<endl;
     cin>>op;
 
-    swich(op){
+    switch(op){
 
         case '+':cout<<(a+b);
               break;
