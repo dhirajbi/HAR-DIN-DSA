@@ -1,34 +1,31 @@
+
 #include<iostream>
-#include<vector>
 using namespace std;
-                  
-void selectionSort(vector<int>v ,int n){
 
-   
-    for(int i = 0;i<n-1;i++){
-
-         int minIndex = i;
-
-        for(int j = i+1;j<n;j++){
-            
-            if(v[j]<v[minIndex])
-
+void selectionSort(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        int minIndex = i;
+        for (int j = i + 1; j < n; j++) {
+            if (arr[j] < arr[minIndex]) {
                 minIndex = j;
-            swap(v[minIndex],v[i]);
-
+            }
         }
+        swap(arr[minIndex], arr[i]);
     }
 }
 
-
-
-int main(){
-vector<int>v;
-v[]={2,4,3,56,5};
-int n;
-n=v.size();
-cout<< selectionSort(v,n);
-
-cout<<endl;
-return 0;
+int main() {
+    int arr[5] = {2,67,1, 56, 5};
+    
+    // Perform the sort
+    selectionSort(arr, 5);
+    
+    // Print the sorted array
+    cout << "Sorted array: ";
+    for (int i = 0; i < 5; i++) {
+        cout << arr[i] << " ";
+    }
+    
+    cout << endl;
+    return 0;
 }
