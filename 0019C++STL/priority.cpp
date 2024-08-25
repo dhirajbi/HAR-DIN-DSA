@@ -12,10 +12,11 @@ int main(){
     maxi.push(3);
     maxi.push(2);
     maxi.push(0);
-    cout<<"size"<<maxi.size()<<endl;
+
+    cout<<"size of max-heap:"<<maxi.size()<<endl;
 
     int n = maxi.size();
-    for(int i;i<n;i++){
+    for(int i=0;i<n;i++){
         cout<<maxi.top()<<" ";
         maxi.pop();
     }cout<<endl;
@@ -27,7 +28,7 @@ int main(){
     mini.push(3);
    
    int m = mini.size();
-    for(int i;i<m;i++){
+    for(int i=0;i<m;i++){
         cout<<mini.top()<<" ";
         mini.pop();
     }cout<<endl;
